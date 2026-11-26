@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+        <title>CECYTEM Neza II</title>
+        <link rel="stylesheet" href="css/estilos.css">
+        </head>
+    <body>
+<header>
+<div class="logo">C2</div>
+<nav><a href="#inicio">Inicio</a><a href="#somos">Somos</a><a href="#comunidad">Comunidad</a></nav>
+</header>
+
+    <section id="inicio">
+        <h2>Inicio</h2>
+        <div class="carousel">
+            <button id="prev" aria-label="Anterior">‹</button>
+            <div class="slide" id="slide"></div>
+            <button id="next" aria-label="Siguiente">›</button>
+        </div>
+        <div class="dots" id="dots"></div>
+    </section>
+
+    <section id="somos">
+    <h2>Nosotros</h2>
+        <div class="tl">
+            <div class="card"><h3>🎨 Animación</h3><p class="muted">Aquí cuentas qué hace la carrera de Animación: proyectos, herramientas y logros del plantel.</p></div>
+            <div class="card"><h3>💻 Programación</h3><p class="muted">Aquí cuentas qué hace la carrera de Programación: apps, sitios web y proyectos del plantel.</p></div>
+        </div>
+    </section>
+
+    <section id="comunidad">
+    <h2>Comunidad</h2>
+
+    <div class="grinch">
+        <div class="heart" id="heart">💚</div>
+        <h3 style="margin:4px 0">Dinámica del Grinch escolar</h3>
+        <p class="muted" style="margin:0">Cada buena acción de la comunidad hace crecer el corazón del Grinch. ¡Hagámoslo explotar de bondad!</p>
+        <div class="bar"><div id="fill"></div></div>
+        <b id="count">1 de 10 buenas acciones</b>
+        <label for="act">Cuenta tu buena acción navideña</label>
+        <input id="act" placeholder="Ej. Compartí mi lunch con un compañero">
+        <button class="btn" id="addAct">Sumar al corazón</button>
+        <p id="actMsg" class="muted"></p>
+    </div>
+
+    <div class="grid">
+        <div class="card">
+            <h3 style="margin-top:0">Formulario y reseñas</h3>
+            <label for="nm">Nombre</label><input id="nm">
+            <label>Calificación</label>
+            <div class="stars" id="stars"></div>
+            <label for="tx">Tu reseña</label><textarea id="tx" rows="3"></textarea>
+            <button class="btn" id="send">Enviar reseña</button>
+            <div id="reviews"></div>
+            </div>
+            <div class="card">
+            <h3 style="margin-top:0">Fotos del CECYTEM</h3>
+            <p class="muted" style="margin:0">Aquí van las fotos del plantel y de sus eventos.</p>
+            <div class="photos">
+                <div>
+                    <img src="fotos/plantel1.jpg" alt="cecytem">
+                </div>
+                <div>
+                    <img src="fotos/plantel2.jpg" alt="cecytem">
+                </div>
+                <div>
+                    <img src="fotos/plantel3.jpg" alt="cecytem">
+                </div>
+                <div>
+                    <img src="fotos/plantel4.jpg" alt="cecyten">
+                </div>
+                <div>
+                    <img src="fotos/plantel5.jpg" alt="papoi">
+                </div>
+                <div>
+                    <img src="fotos/plantel6.jpg" alt="">
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<footer>CECYTEM Nezahualcóyotl II · Hecho por y para la comunidad escolar</footer>
+
+<script src="js/main.js"></script>
+</body>
+</html>
