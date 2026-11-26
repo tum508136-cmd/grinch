@@ -8,6 +8,22 @@ show();setInterval(function(){i=(i+1)%slides.length;show()},6000);
 
 var n=1,goal=10;
 function upd(){var p=Math.min(n/goal,1);document.getElementById('fill').style.width=(p*100)+'%';
+function mood(){
+  var m=document.getElementById('mouth'),l=document.getElementById('browL'),r=document.getElementById('browR');
+  if(n>=goal){            // feliz
+    m.setAttribute('d','M42 84 Q60 106 78 84');
+    l.setAttribute('y1',58);l.setAttribute('y2',52);
+    r.setAttribute('y1',58);r.setAttribute('y2',52);
+  }else if(n>=goal/2){    // neutral
+    m.setAttribute('d','M45 90 L75 90');
+    l.setAttribute('y1',55);l.setAttribute('y2',55);
+    r.setAttribute('y1',55);r.setAttribute('y2',55);
+  }else{                  // enojada
+    m.setAttribute('d','M45 92 Q60 82 75 92');
+    l.setAttribute('y1',54);l.setAttribute('y2',60);
+    r.setAttribute('y1',54);r.setAttribute('y2',60);
+  }
+}
 document.getElementById('count').textContent=n+' de '+goal+' buenas acciones';
 document.getElementById('heart').style.transform='scale('+(1+p*0.8)+')';
 if(n>=goal)document.getElementById('heart').textContent='💖'}
